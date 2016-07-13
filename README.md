@@ -30,7 +30,9 @@
   - httplib2
   - flask
 - installed item catalog project to `/var/www/catalog`
-- configured apache to load `/var/www/catalog/wsgi`
+- configured apache to load `/var/www/catalog/catalog.wsgi`
+- changed the app to use postgresql (instead of sqlite)
+- figured out that I have to set app.secret_key in the wsgi file
 - added user catalog to postgresql, checked that only local connections allowed
 - addedd .htaccess disallow .git access
 
